@@ -1,0 +1,89 @@
+.hero {
+  position: relative;
+  min-height: 21rem;
+  overflow: hidden;
+  background: #52504e;
+  color: white;
+}
+.visual {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: #52504e;
+}
+.visual::after {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  background: linear-gradient(180deg, rgb(13 33 62 / 8%), rgb(8 20 40 / 58%));
+  content: "";
+}
+.image {
+  z-index: 0;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(0.86) saturate(0.9);
+}
+.content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  min-height: 21rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1.25rem;
+  text-align: center;
+}
+.content h1 {
+  max-width: 22rem;
+  margin: 0;
+  font-family: var(--font-atkinson), Arial, Helvetica, sans-serif;
+  font-size: clamp(2.25rem, 11vw, 3.5rem);
+  line-height: 0.98;
+  letter-spacing: -0.045em;
+}
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-top: 1.5rem;
+  border-radius: 999px;
+  padding: 0.9rem 1.6rem;
+  background: var(--gold);
+  color: var(--ink);
+  font-weight: 700;
+  text-decoration: none;
+}
+.button svg {
+  width: 1.1rem;
+  height: 1.1rem;
+  stroke-width: 2.4;
+}
+.button:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 3px;
+}
+.attribution {
+  position: absolute;
+  z-index: 2;
+  right: 0.75rem;
+  bottom: 2.75rem;
+}
+
+@media (min-width: 720px) {
+  .hero {
+    min-height: 28rem;
+    border-radius: 0 0 2rem 2rem;
+  }
+  .content {
+    min-height: 28rem;
+  }
+  .content h1 {
+    max-width: 42rem;
+    font-size: 4.8rem;
+  }
+  .attribution {
+    bottom: 2.5rem;
+  }
+}

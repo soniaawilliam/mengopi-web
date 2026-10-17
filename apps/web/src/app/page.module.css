@@ -1,0 +1,22 @@
+.siteShell {
+  min-height: 100vh;
+  padding-bottom: 5.75rem;
+}
+.homeContent {
+  position: relative;
+  margin-top: -2rem;
+  border-radius: 1.75rem 1.75rem 0 0;
+  background: var(--cream);
+}
+
+@media (min-width: 720px) {
+  .siteShell {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+  }
+  .homeContent {
+    margin-top: -2rem;
+    border-radius: 2rem 2rem 0 0;
+  }
+}

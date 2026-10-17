@@ -1,0 +1,67 @@
+:root {
+  --cream: #f8f4ef;
+  --ink: #211914;
+  --brown: #7a2f00;
+  --orange: #b4441e;
+  --gold: #f6b83e;
+  --dark-card: #211914;
+}
+
+* {
+  box-sizing: border-box;
+}
+html {
+  background: var(--cream);
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--font-lexend), Arial, Helvetica, sans-serif;
+}
+a {
+  color: inherit;
+}
+button,
+input {
+  font: inherit;
+}
+button {
+  cursor: pointer;
+}
+h1,
+h2,
+h3 {
+  font-family: var(--font-atkinson), Arial, Helvetica, sans-serif;
+}
+
+.imageAttribution {
+  margin: 0;
+  color: rgb(255 255 255 / 70%);
+  font-size: 0.4rem;
+  line-height: 1.2;
+  text-align: right;
+  text-shadow: 0 1px 3px rgb(0 0 0 / 45%);
+}
+
+.imageAttribution a {
+  text-underline-offset: 0.12rem;
+}
+
+.imageAttribution a:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 3px;
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
