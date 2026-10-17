@@ -1,0 +1,206 @@
+.shell {
+  min-height: 100vh;
+  padding-bottom: 5.75rem;
+}
+
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 3rem;
+}
+
+.backLink {
+  display: inline-block;
+  margin-bottom: 2.25rem;
+  color: var(--brown);
+  font-weight: 700;
+  text-underline-offset: 0.2rem;
+}
+
+.eyebrow,
+.category {
+  margin: 0;
+  color: var(--orange);
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.content h1 {
+  margin: 0.35rem 0 0;
+  color: var(--brown);
+  font-size: clamp(2.3rem, 8vw, 4rem);
+  line-height: 0.95;
+}
+
+.intro {
+  max-width: 38rem;
+  margin: 1rem 0 2rem;
+  color: #514842;
+  line-height: 1.6;
+}
+
+.filters {
+  display: grid;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background: white;
+}
+
+.filters label {
+  display: grid;
+  gap: 0.35rem;
+  color: var(--ink);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.filters input,
+.filters select {
+  min-height: 2.75rem;
+  border: 1px solid #b8ada5;
+  border-radius: 0.55rem;
+  padding: 0.55rem 0.7rem;
+  background: white;
+  color: var(--ink);
+}
+
+.filters button {
+  min-height: 2.75rem;
+  border: 0;
+  border-radius: 0.55rem;
+  background: var(--brown);
+  color: white;
+  font-weight: 800;
+}
+
+.resultCount {
+  margin: 0 0 0.75rem;
+  color: #665b54;
+  font-size: 0.9rem;
+}
+
+.eventList {
+  display: grid;
+  gap: 1rem;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 4.25rem 1fr;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid #e3d8cf;
+  border-radius: 1rem;
+  background: white;
+  box-shadow: 0 0.35rem 1.3rem rgb(33 25 20 / 6%);
+}
+
+.date {
+  display: grid;
+  align-content: start;
+  justify-items: center;
+  min-height: 4.4rem;
+  padding: 0.55rem 0.25rem;
+  border-radius: 0.7rem;
+  background: var(--gold);
+  color: var(--ink);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.date span {
+  font-size: 0.7rem;
+  font-weight: 800;
+}
+
+.date strong {
+  font-family: var(--font-atkinson), Arial, sans-serif;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.details h2 {
+  margin: 0.25rem 0 0.45rem;
+  color: var(--brown);
+  font-size: 1.45rem;
+  line-height: 1.05;
+}
+
+.details > p:not(.category):not(.provenance) {
+  margin: 0;
+  color: #514842;
+  line-height: 1.5;
+}
+
+.details dl {
+  display: grid;
+  gap: 0.45rem;
+  margin: 1rem 0 0;
+}
+
+.details dl div {
+  display: grid;
+  grid-template-columns: 5rem 1fr;
+  gap: 0.5rem;
+}
+
+.details dt {
+  color: #665b54;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.details dd {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.provenance {
+  margin: 1rem 0 0;
+  color: #756a63;
+  font-size: 0.75rem;
+}
+
+.provenance a {
+  color: var(--brown);
+  text-underline-offset: 0.15rem;
+}
+
+.message {
+  padding: 1.25rem;
+  border-radius: 1rem;
+  background: white;
+  color: #514842;
+}
+
+.disclaimer {
+  margin: 1.5rem 0 0;
+  color: #756a63;
+  font-size: 0.78rem;
+  line-height: 1.5;
+}
+
+@media (min-width: 720px) {
+  .shell {
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+
+  .content {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+
+  .filters {
+    grid-template-columns: 1.5fr 1fr 1fr auto;
+    align-items: end;
+  }
+
+  .filters button {
+    padding: 0 1.1rem;
+  }
+}

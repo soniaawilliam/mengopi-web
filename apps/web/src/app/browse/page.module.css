@@ -1,0 +1,140 @@
+.shell {
+  min-height: 100vh;
+  padding-bottom: 5.75rem;
+}
+
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 3rem;
+}
+
+.backLink {
+  display: inline-block;
+  margin-bottom: 2.25rem;
+  color: var(--brown);
+  font-weight: 700;
+  text-underline-offset: 0.2rem;
+}
+
+.eyebrow,
+.category {
+  margin: 0;
+  color: var(--orange);
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.content h1 {
+  margin: 0.35rem 0 0;
+  color: var(--brown);
+  font-size: clamp(2.3rem, 8vw, 4rem);
+  line-height: 0.95;
+}
+
+.intro {
+  max-width: 38rem;
+  margin: 1rem 0 2rem;
+  color: #514842;
+  line-height: 1.6;
+}
+
+.resultCount {
+  margin: 0 0 0.75rem;
+  color: #665b54;
+  font-size: 0.9rem;
+}
+
+.resourceList {
+  display: grid;
+  gap: 1rem;
+}
+
+.card {
+  padding: 1rem;
+  border: 1px solid #e3d8cf;
+  border-radius: 1rem;
+  background: white;
+  box-shadow: 0 0.35rem 1.3rem rgb(33 25 20 / 6%);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.cost {
+  color: #665b54;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.card h2 {
+  margin: 0.35rem 0 0.45rem;
+  color: var(--brown);
+  font-size: 1.45rem;
+  line-height: 1.05;
+}
+
+.card > p {
+  margin: 0;
+  color: #514842;
+  line-height: 1.5;
+}
+
+.card dl {
+  display: grid;
+  gap: 0.45rem;
+  margin: 1rem 0 0;
+}
+
+.card dl div {
+  display: grid;
+  grid-template-columns: 5rem 1fr;
+  gap: 0.5rem;
+}
+
+.card dt {
+  color: #665b54;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.card dd {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.source {
+  margin-top: 1rem !important;
+  color: #756a63 !important;
+  font-size: 0.75rem;
+}
+
+.source a {
+  color: var(--brown);
+  text-underline-offset: 0.15rem;
+}
+
+.message {
+  padding: 1.25rem;
+  border-radius: 1rem;
+  background: white;
+  color: #514842;
+}
+
+@media (min-width: 720px) {
+  .shell {
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+
+  .content {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}

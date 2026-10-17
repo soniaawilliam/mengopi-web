@@ -10,6 +10,24 @@
   background: var(--dark-card);
   color: white;
 }
+.emptyState {
+  border-radius: 1.2rem;
+  padding: 1.1rem;
+  background: var(--dark-card);
+  color: white;
+}
+.emptyState h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.15;
+}
+.emptyState a {
+  display: inline-block;
+  margin-top: 0.85rem;
+  color: var(--gold);
+  font-weight: 700;
+  text-underline-offset: 0.15rem;
+}
 .eventDate {
   display: flex;
   min-width: 4.4rem;
